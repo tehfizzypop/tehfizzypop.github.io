@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reis Property Partners - Professional property management services. We handle residential and commercial properties with expertise and care.">
+    <meta name="keywords" content="property management, real estate, residential properties, commercial properties, property maintenance">
+    <title>Reis Property Partners - Professional Property Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<nav class="navbar" style="top: 2px;">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="RPP_Logo.jpg" alt="Reis Property Partners Logo" class="logo-image">
+                </a>
+            </div>
+                                    <ul class="nav-menu">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link active">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="services.html" class="nav-link" style="left: 1px;">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="properties.html" class="nav-link">Properties</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://passport.appf.io/sign_in?idp_type=tportal&vhostless=true" class="nav-link">Resident Portal</a>
+                            </li>
+                        </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Your Property, Our Priority</h1>
+                <div class="hero-buttons">
+                    <a href="contact.html" class="btn btn-primary" style="margin-right: 10px;">Get Started</a>
+                    <a href="services.html" class="btn btn-primary" style="margin-right: 10px;">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview Section -->
+    <section class="services-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive property management solutions tailored to your needs</p>
+            </div>
+            <div class="services-preview">
+                <div class="service-preview-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Property Management</h3>
+                    <p>Complete management of residential and commercial properties including tenant screening, rent collection, and maintenance coordination.</p>
+                </div>
+                <div class="service-preview-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Accounting</h3>
+                    <p>Professional accounting services for property owners and investors.</p>
+                </div>
+                <div class="service-preview-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Maintenance & Repairs</h3>
+                    <p>24/7 maintenance services with trusted contractors and quick response times for all property needs.</p>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="services.html" class="btn btn-primary">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Overview Section -->
+    <section class="properties-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Properties</h2>
+                <p>Discover our diverse portfolio of managed properties</p>
+            </div>
+            <div class="properties-preview">
+                <div class="property-preview-card">
+                    <div class="property-image">
+                        <div class="property-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slide active">
+                                    <img src="images/lifestyle-apartments.jpg" alt="Property 1 Exterior" class="carousel-image">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="images/lifestyle-apartments2.jpg" alt="Property 1 Exterior2" class="carousel-image">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="images/lifestyle-apartments3.jpg" alt="Property 1 Exterior3" class="carousel-image">
+                                </div> 
+                            </div>
+                            <button class="carousel-btn prev" onclick="changeSlide(this, -1)">❮</button>
+                            <button class="carousel-btn next" onclick="changeSlide(this, 1)">❯</button>
+                            <div class="carousel-dots">
+                                <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                                <span class="dot" onclick="currentSlide(this, 1)"></span>
+                                <span class="dot" onclick="currentSlide(this, 2)"></span>
+                            </div>
+                        </div>
+                        <div class="property-badge">Available</div>
+                    </div>
+                    <div class="property-content">
+                        <h3>Modern Downtown Apartment</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> 1234 Main Street, Anytown, USA</p>
+                        <div class="property-details">
+                            <span><i class="fas fa-bed"></i> 2 Bedrooms</span>
+                            <span><i class="fas fa-bath"></i> 2 Bathrooms</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="property-preview-card">
+                    <div class="property-image">
+                        <div class="property-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slide active">
+                                    <div class="property-placeholder">
+                                        <i class="fas fa-building"></i>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <div class="property-placeholder">
+                                        <i class="fas fa-briefcase"></i>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <div class="property-placeholder">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-btn prev" onclick="changeSlide(this, -1)">❮</button>
+                            <button class="carousel-btn next" onclick="changeSlide(this, 1)">❯</button>
+                            <div class="carousel-dots">
+                                <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                                <span class="dot" onclick="currentSlide(this, 1)"></span>
+                                <span class="dot" onclick="currentSlide(this, 2)"></span>
+                            </div>
+                        </div>
+                        <div class="property-badge">Leased</div>
+                    </div>
+                    <div class="property-content">
+                        <h3>Office Space Complex</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Business District</p>
+                        <div class="property-details">
+                            <span><i class="fas fa-ruler-combined"></i> 5,000 sq ft</span>
+                            <span><i class="fas fa-parking"></i> Parking</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="property-preview-card">
+                    <div class="property-image">
+                        <div class="property-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slide active">
+                                    <div class="property-placeholder">
+                                        <i class="fas fa-home"></i>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <div class="property-placeholder">
+                                        <i class="fas fa-tree"></i>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <div class="property-placeholder">
+                                        <i class="fas fa-car"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-btn prev" onclick="changeSlide(this, -1)">❮</button>
+                            <button class="carousel-btn next" onclick="changeSlide(this, 1)">❯</button>
+                            <div class="carousel-dots">
+                                <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                                <span class="dot" onclick="currentSlide(this, 1)"></span>
+                                <span class="dot" onclick="currentSlide(this, 2)"></span>
+                            </div>
+                        </div>
+                        <div class="property-badge">Coming Soon</div>
+                    </div>
+                    <div class="property-content">
+                        <h3>Family Home</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Suburban Area</p>
+                        <div class="property-details">
+                            <span><i class="fas fa-bed"></i> 4 Bedrooms</span>
+                            <span><i class="fas fa-bath"></i> 3 Bathrooms</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="properties.html" class="btn btn-primary">View All Properties</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Overview Section -->
+    <section class="about-overview">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Reis Property Partners</h2>
+                    <p>With over 15 years of experience in property management, Reis Property Partners has established itself as a trusted name in the industry. We understand that your property is more than just an investment—it's a valuable asset that requires professional care and attention.</p>
+                    <p>Our team of certified property managers and real estate professionals are dedicated to maximizing your property's value while providing exceptional service to both property owners and tenants.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>150+</h3>
+                            <p>Properties Managed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>15+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>Happy Tenants</p>
+                        </div>
+                    </div>
+                    <div class="about-cta">
+                        <a href="about.html" class="btn btn-primary">Learn More About Us</a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/RPP_Team.jpg" alt="Reis Property Partners Team" class="team-photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Overview Section -->
+    <section class="contact-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ready to Get Started?</h2>
+                <p>Contact us today for a free consultation and discover how we can help maximize your property investment returns.</p>
+            </div>
+            <div class="contact-preview">
+                <div class="contact-preview-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>(651) 448-7470</p>
+                    <p>Available 24/7 for emergencies</p>
+                </div>
+                <div class="contact-preview-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>Info@reispropertypartners.com</p>
+                    <p>We respond within 24 hours</p>
+                </div>
+                <div class="contact-preview-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>7300 147th Street West, Suite 303</p>
+                    <p>Apple Valley, MN 55124</p>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="contact.html" class="btn btn-primary">Contact Us Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Reis Property Partners</h3>
+                    <p>Professional property management solutions for residential and commercial properties.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/stephanie-reis-170b92b7/"><i class="fab fa-linkedin"></i></a>
+
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Residential Management</a></li>
+                        <li><a href="services.html">Commercial Management</a></li>
+                        <li><a href="services.html">Maintenance & Repairs</a></li>
+                        <li><a href="services.html">Tenant Screening</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="properties.html">Properties</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Reis Property Partners. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal">
+        <div class="image-modal-content">
+            <button class="image-modal-close" onclick="closeImageModal()">&times;</button>
+            <button class="image-modal-nav image-modal-prev" onclick="navigateImage(-1)">❮</button>
+            <button class="image-modal-nav image-modal-next" onclick="navigateImage(1)">❯</button>
+            <img id="modalImage" src="" alt="Property Image">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

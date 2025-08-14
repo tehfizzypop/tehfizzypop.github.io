@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our managed properties portfolio. Reis Property Partners offers a diverse selection of residential and commercial properties.">
+    <meta name="keywords" content="managed properties, residential properties, commercial properties, property portfolio, real estate listings">
+    <title>Properties - Reis Property Partners</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="RPP_Logo.jpg" alt="Reis Property Partners Logo" class="logo-image">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="properties.html" class="nav-link active">Properties</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://passport.appf.io/sign_in?idp_type=tportal&vhostless=true" class="nav-link">Resident Portal</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Our Properties</h1>
+            <p class="page-subtitle">Discover our diverse portfolio of managed residential and commercial properties</p>
+        </div>
+    </section>
+
+    <!-- Properties Section -->
+    <section class="properties">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Properties</h2>
+                <p>Explore our carefully managed portfolio of properties, each maintained to the highest standards for optimal tenant satisfaction and investment returns.</p>
+            </div>
+            
+            <div class="properties-grid">
+                <div class="property-card" data-aos="fade-up">
+                    <div class="property-image">
+                        <div class="property-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slide active">
+                                    <div class="property-placeholder">
+                                        <i class="fas fa-home"></i>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <div class="property-placeholder">
+                                        <i class="fas fa-couch"></i>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <div class="property-placeholder">
+                                        <i class="fas fa-kitchen-set"></i>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <div class="property-placeholder">
+                                        <i class="fas fa-bed"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-btn prev" onclick="changeSlide(this, -1)">❮</button>
+                            <button class="carousel-btn next" onclick="changeSlide(this, 1)">❯</button>
+                            <div class="carousel-dots">
+                                <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                                <span class="dot" onclick="currentSlide(this, 1)"></span>
+                                <span class="dot" onclick="currentSlide(this, 2)"></span>
+                                <span class="dot" onclick="currentSlide(this, 3)"></span>
+                            </div>
+                        </div>
+                        <div class="property-badge">Available</div>
+                    </div>
+                    <div class="property-content">
+                        <h3><a href="modern-downtown-apartment.html" class="property-title-link">Modern Downtown Apartment</a></h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Downtown District</p>
+                        <div class="property-details">
+                            <span><i class="fas fa-bed"></i> 2 Bedrooms</span>
+                            <span><i class="fas fa-bath"></i> 2 Bathrooms</span>
+                            <span><i class="fas fa-ruler-combined"></i> 1,200 sq ft</span>
+                        </div>
+                        <p class="property-description">Beautifully renovated apartment with modern amenities, hardwood floors, and city views. Perfect for professionals seeking a convenient downtown location.</p>
+                        <div class="property-features">
+                            <span class="feature-tag">Pet Friendly</span>
+                            <span class="feature-tag">Parking</span>
+                            <span class="feature-tag">Gym Access</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="property-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="property-image">
+                        <div class="property-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slide active">
+                                    <div class="property-placeholder">
+                                        <i class="fas fa-home"></i>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <div class="property-placeholder">
+                                        <i class="fas fa-tree"></i>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <div class="property-placeholder">
+                                        <i class="fas fa-car"></i>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <div class="property-placeholder">
+                                        <i class="fas fa-utensils"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-btn prev" onclick="changeSlide(this, -1)">❮</button>
+                            <button class="carousel-btn next" onclick="changeSlide(this, 1)">❯</button>
+                            <div class="carousel-dots">
+                                <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                                <span class="dot" onclick="currentSlide(this, 1)"></span>
+                                <span class="dot" onclick="currentSlide(this, 2)"></span>
+                                <span class="dot" onclick="currentSlide(this, 3)"></span>
+                            </div>
+                        </div>
+                        <div class="property-badge">Coming Soon</div>
+                    </div>
+                    <div class="property-content">
+                        <h3>Suburban Family Home</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Suburban Heights</p>
+                        <div class="property-details">
+                            <span><i class="fas fa-bed"></i> 4 Bedrooms</span>
+                            <span><i class="fas fa-bath"></i> 3 Bathrooms</span>
+                            <span><i class="fas fa-ruler-combined"></i> 2,800 sq ft</span>
+                        </div>
+                        <p class="property-description">Spacious family home with large backyard, updated kitchen, and excellent school district. Ideal for growing families seeking suburban comfort.</p>
+                        <div class="property-features">
+                            <span class="feature-tag">Backyard</span>
+                            <span class="feature-tag">Garage</span>
+                            <span class="feature-tag">Updated Kitchen</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="property-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="property-image">
+                        <div class="property-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slide active">
+                                    <div class="property-placeholder">
+                                        <i class="fas fa-store"></i>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <div class="property-placeholder">
+                                        <i class="fas fa-shopping-bag"></i>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <div class="property-placeholder">
+                                        <i class="fas fa-utensils"></i>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <div class="property-placeholder">
+                                        <i class="fas fa-parking"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-btn prev" onclick="changeSlide(this, -1)">❮</button>
+                            <button class="carousel-btn next" onclick="changeSlide(this, 1)">❯</button>
+                            <div class="carousel-dots">
+                                <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                                <span class="dot" onclick="currentSlide(this, 1)"></span>
+                                <span class="dot" onclick="currentSlide(this, 2)"></span>
+                                <span class="dot" onclick="currentSlide(this, 3)"></span>
+                            </div>
+                        </div>
+                        <div class="property-badge">Available</div>
+                    </div>
+                    <div class="property-content">
+                        <h3>Retail Space - Main Street</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Main Street District</p>
+                        <div class="property-details">
+                            <span><i class="fas fa-ruler-combined"></i> 2,500 sq ft</span>
+                            <span><i class="fas fa-parking"></i> 10 Parking Spaces</span>
+                            <span><i class="fas fa-store"></i> Retail</span>
+                        </div>
+                        <p class="property-description">Prime retail location with high foot traffic, modern storefront, and flexible layout. Perfect for restaurants, boutiques, or service businesses.</p>
+                        <div class="property-features">
+                            <span class="feature-tag">High Traffic</span>
+                            <span class="feature-tag">Modern Storefront</span>
+                            <span class="feature-tag">Flexible Layout</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="property-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="property-image">
+                        <div class="property-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slide active">
+                                    <div class="property-placeholder">
+                                        <i class="fas fa-industry"></i>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <div class="property-placeholder">
+                                        <i class="fas fa-truck"></i>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <div class="property-placeholder">
+                                        <i class="fas fa-boxes-stacked"></i>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <div class="property-placeholder">
+                                        <i class="fas fa-warehouse"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-btn prev" onclick="changeSlide(this, -1)">❮</button>
+                            <button class="carousel-btn next" onclick="changeSlide(this, 1)">❯</button>
+                            <div class="carousel-dots">
+                                <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                                <span class="dot" onclick="currentSlide(this, 1)"></span>
+                                <span class="dot" onclick="currentSlide(this, 2)"></span>
+                                <span class="dot" onclick="currentSlide(this, 3)"></span>
+                            </div>
+                        </div>
+                        <div class="property-badge">Leased</div>
+                    </div>
+                    <div class="property-content">
+                        <h3>Industrial Warehouse</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Industrial Park</p>
+                        <div class="property-details">
+                            <span><i class="fas fa-ruler-combined"></i> 15,000 sq ft</span>
+                            <span><i class="fas fa-truck"></i> Loading Dock</span>
+                            <span><i class="fas fa-industry"></i> Industrial</span>
+                        </div>
+                        <p class="property-description">Large industrial space with loading docks, high ceilings, and excellent accessibility. Ideal for manufacturing, storage, or distribution operations.</p>
+                        <div class="property-features">
+                            <span class="feature-tag">Loading Docks</span>
+                            <span class="feature-tag">High Ceilings</span>
+                            <span class="feature-tag">24/7 Access</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="property-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="property-image">
+                        <div class="property-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slide active">
+                                    <div class="property-placeholder">
+                                        <i class="fas fa-home"></i>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <div class="property-placeholder">
+                                        <i class="fas fa-water"></i>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <div class="property-placeholder">
+                                        <i class="fas fa-swimming-pool"></i>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <div class="property-placeholder">
+                                        <i class="fas fa-concierge-bell"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-btn prev" onclick="changeSlide(this, -1)">❮</button>
+                            <button class="carousel-btn next" onclick="changeSlide(this, 1)">❯</button>
+                            <div class="carousel-dots">
+                                <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                                <span class="dot" onclick="currentSlide(this, 1)"></span>
+                                <span class="dot" onclick="currentSlide(this, 2)"></span>
+                                <span class="dot" onclick="currentSlide(this, 3)"></span>
+                            </div>
+                        </div>
+                        <div class="property-badge">Available</div>
+                    </div>
+                    <div class="property-content">
+                        <h3>Luxury Condo</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Waterfront District</p>
+                        <div class="property-details">
+                            <span><i class="fas fa-bed"></i> 3 Bedrooms</span>
+                            <span><i class="fas fa-bath"></i> 2.5 Bathrooms</span>
+                            <span><i class="fas fa-ruler-combined"></i> 1,800 sq ft</span>
+                        </div>
+                        <p class="property-description">Luxurious waterfront condo with stunning views, premium finishes, and resort-style amenities. Perfect for executives or empty nesters.</p>
+                        <div class="property-features">
+                            <span class="feature-tag">Waterfront View</span>
+                            <span class="feature-tag">Pool Access</span>
+                            <span class="feature-tag">Concierge</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="property-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="property-image">
+                        <div class="property-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slide active">
+                                    <div class="property-placeholder">
+                                        <i class="fas fa-building"></i>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <div class="property-placeholder">
+                                        <i class="fas fa-elevator"></i>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <div class="property-placeholder">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <div class="property-placeholder">
+                                        <i class="fas fa-wifi"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-btn prev" onclick="changeSlide(this, -1)">❮</button>
+                            <button class="carousel-btn next" onclick="changeSlide(this, 1)">❯</button>
+                            <div class="carousel-dots">
+                                <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                                <span class="dot" onclick="currentSlide(this, 1)"></span>
+                                <span class="dot" onclick="currentSlide(this, 2)"></span>
+                                <span class="dot" onclick="currentSlide(this, 3)"></span>
+                            </div>
+                        </div>
+                        <div class="property-badge">Leased</div>
+                    </div>
+                    <div class="property-content">
+                        <h3>Office Building</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Business District</p>
+                        <div class="property-details">
+                            <span><i class="fas fa-ruler-combined"></i> 8,000 sq ft</span>
+                            <span><i class="fas fa-elevator"></i> 3 Floors</span>
+                            <span><i class="fas fa-building"></i> Office</span>
+                        </div>
+                        <p class="property-description">Professional office building with modern amenities, conference rooms, and flexible floor plans. Ideal for law firms, consulting, or tech companies.</p>
+                        <div class="property-features">
+                            <span class="feature-tag">Conference Rooms</span>
+                            <span class="feature-tag">Modern Amenities</span>
+                            <span class="feature-tag">Flexible Layout</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="fade-up">
+                    <div class="stat-number" data-target="150">0</div>
+                    <div class="stat-label">Properties Managed</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-number" data-target="95">0</div>
+                    <div class="stat-label">Occupancy Rate (%)</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Happy Tenants</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Interested in Our Properties?</h2>
+                <p>Contact us to learn more about our available properties or to discuss property management services for your investment.</p>
+                <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Reis Property Partners</h3>
+                    <p>Professional property management services you can trust. We handle residential and commercial properties with expertise and care.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/stephanie-reis-170b92b7/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="properties.html">Properties</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Residential Management</a></li>
+                        <li><a href="services.html">Commercial Management</a></li>
+                        <li><a href="services.html">Maintenance Services</a></li>
+                        <li><a href="services.html">Tenant Screening</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> (651) 448-7470</p>
+                        <p><i class="fas fa-envelope"></i> Info@reispropertypartners.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 7300 147th Street West, Suite 303<br>Apple Valley, MN 55124</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Reis Property Partners. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal">
+        <div class="image-modal-content">
+            <button class="image-modal-close" onclick="closeImageModal()">&times;</button>
+            <button class="image-modal-nav image-modal-prev" onclick="navigateImage(-1)">❮</button>
+            <button class="image-modal-nav image-modal-next" onclick="navigateImage(1)">❯</button>
+            <img id="modalImage" src="" alt="Property Image">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
